@@ -49,7 +49,7 @@ kaggle notebook
 
 # 構成
 
-| ファイル名      | URL  | 備考     |
+| 名称      | ファイル名  | 備考     |
 | ---------- | ---- | ------ |
-| main.ipynb | []() | 提出ファイル |
+| データ確認ファイル | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
 |            |      |        |
