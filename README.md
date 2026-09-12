@@ -6,7 +6,8 @@
 | 名称      | ファイル名  | 備考     |
 | ---------- | ---- | ------ |
 | データ確認ファイル | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
-| 画像サイズ違いについての整合調査 |[Imagesize_investigation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/Imagesize_investigation.ipynb)      |        |
+| 画像サイズ違いについての整合調査ファイル |[Imagesize_investigation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/Imagesize_investigation.ipynb)     |  |
+|apo学習ファイル|[apo.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo.ipynb)||
 
 
 
@@ -47,13 +48,31 @@
 |画像_00001|15.2|78.5|19.1|
 |画像_00002|13.7|81.3|18.4|
 
-# 環境
+# 環境 
+
+```linux```
 
 ```
-google colab
-
-or
-
-kaggle notebook
+git clone https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data.git
 ```
 
+```
+python3 -m venv .venv
+```
+
+```
+source .venv/bin/activate
+
+#deactivate
+```
+
+```
+pip install -r requirements.txt
+
+#pip freeze > requirements.txt
+```
+
+
+```
+jupyter lab
+```
