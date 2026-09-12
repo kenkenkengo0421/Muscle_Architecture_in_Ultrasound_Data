@@ -1,5 +1,15 @@
 # UMUDチャレンジ：超音波データによる筋肉構造の解析
 
+
+# 構成
+
+| 名称      | ファイル名  | 備考     |
+| ---------- | ---- | ------ |
+| データ確認ファイル | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
+| 画像サイズ違いについての整合調査 |[Imagesize_investigation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/Imagesize_investigation.ipynb)      |        |
+
+
+
 # 課題概要
 
 このコンテストの目的は、超音波画像から3つの主要な筋肉構造変数を正確に推定できるアルゴリズムを構築することです。
@@ -47,9 +57,3 @@ or
 kaggle notebook
 ```
 
-# 構成
-
-| 名称      | ファイル名  | 備考     |
-| ---------- | ---- | ------ |
-| データ確認ファイル | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
-|            |      |        |
