@@ -46,25 +46,10 @@ PA,FL,MT
 * submission.csv
 
 
-# model作成時の構成
+# model
+
 
 ```
-セル0
-zip処理
-```
-```
-セル１
-関数、ライブラリの定義、
-```
-
-```
-セル2
-設定と確認など
-```
-
-```
-セル3
-
 全データ
 ↓
 train
@@ -92,12 +77,7 @@ valの正解maskと比較
 ↓
 validation lossを計算
 
-
 loss      → 0 に近づける
-```
-
-```
-セル4
 
 保存した apo_model.pth を読込
 
@@ -108,8 +88,6 @@ loss      → 0 に近づける
 正解maskと比較
 ↓
 Dice / IoU
-
-
 ----
 
 Dice, IoU  → 1 に近づける
