@@ -7,7 +7,7 @@
 | ---------- | ---- | ------ |
 | データ確認ファイル | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
 | 画像サイズ違いについての整合調査ファイル |[Imagesize_investigation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/Imagesize_investigation.ipynb)     |  |
-|apo_fasc学習ファイル|[segmentation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/segmentation.ipynb)||
+|apo_fascセグメンテーション|[segmentation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/segmentation.ipynb)||
 |メモ|[step.md](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/step.md)||
 
 # 環境 
