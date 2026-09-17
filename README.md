@@ -36,9 +36,13 @@ pip install -r requirements.txt
 #pip freeze > requirements.txt
 ```
 
-
 ```
 jupyter lab
+```
+
+```
+pip install catppuccin-jupyterlab
+#見た目
 ```
 
 
