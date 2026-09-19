@@ -1,104 +1,40 @@
 
-# ロードマップ、メモ等
-
-## STEP 1
-* apo segmentation
-* Dataset完成
-* U-Net完成
-* 1 epoch動作確認済み
-
-## STEP 2  apo segmentationの評価
-* Dice / IoU
-* 予測maskの可視化
-
-## STEP 3  fasc segmentation
-* FascDataset
-* U-Net
-* 学習
-* Dice / IoU
-* 予測確認
-
-## STEP 4  predicted apo maskの構造解析
-* superficial apo
-* deep apo
-* を抽出
-
-## STEP 5  predicted fasc maskの構造解析
-* fascicle方向・線を抽出
-
-## STEP 6  geometry
-* apo + fasc
-↓
-PA,FL,MT
-
-## STEP 7  pixel → mm の換算
-
-## STEP 8
-* test_images
-↓
-* apo_model
-* fasc_model
-↓
-* geometry
-↓
-* pa_deg / fl_mm / mt_mm
-↓
-* submission.csv
 
 
-# model
+# 主指標：Normalized MAE
+
+$$
+\mathrm{Score}
+=
+\frac{1}{3}
+\left(
+\frac{\mathrm{MAE}_{PA}}{6}
++
+\frac{\mathrm{MAE}_{FL}}{12}
++
+\frac{\mathrm{MAE}_{MT}}{3}
+\right)
+$$
+
+- PA の許容値：6 deg
+- FL の許容値：12 mm
+- MT の許容値：3 mm
+- 小さいほど良い
 
 
-```
-全データ
-↓
-train
-val
---------------
-train画像
-↓
-モデル
-↓
-予測
-↓
-trainの正解maskと比較
-↓
-loss計算
-↓
-重み更新
---------------
-val画像
-↓
-学習途中のモデル
-↓
-予測
-↓
-valの正解maskと比較
-↓
-validation lossを計算
+# 副指標：予測失敗率
 
-loss      → 0 に近づける
+$$
+\mathrm{Failure\ Rate}
+=
+\frac{\mathrm{Failed\ Images}}
+{\mathrm{Total\ Images}}
+$$
 
-保存した apo_model.pth を読込
+予測失敗の例：
 
-保存モデル + val
-↓
-予測mask
-↓
-正解maskと比較
-↓
-Dice / IoU
-----
-
-Dice, IoU  → 1 に近づける
-
-
-Dice = 2 × 重なった部分
-       ─────────────
-       予測部分 + 正解部分
-
-IoU = 重なった部分
-      ───────────
-      予測と正解を合わせた全体
-```
-
+- PA が NaN
+- FL が NaN
+- MT が NaN
+- apo が正常に抽出できない
+- fascicle line が抽出できない
