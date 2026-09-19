@@ -48,9 +48,9 @@
 
 # ローカルでの指標（この指標をもとに改善）
 
-# 主指標： Normalized MAE
+## 主指標：Normalized MAE
 
-$$
+```math
 \mathrm{Score}
 =
 \frac{1}{3}
@@ -61,7 +61,7 @@ $$
 +
 \frac{\mathrm{MAE}_{MT}}{3}
 \right)
-$$
+```
 
 - PA の許容値：6 deg
 - FL の許容値：12 mm
@@ -69,14 +69,14 @@ $$
 - 小さいほど良い
 
 
-# 副指標： 予測失敗率
+## 副指標：予測失敗率
 
-$$
+```math
 \mathrm{Failure\ Rate}
 =
 \frac{\mathrm{Failed\ Images}}
 {\mathrm{Total\ Images}}
-$$
+```
 
 予測失敗の例：
 
