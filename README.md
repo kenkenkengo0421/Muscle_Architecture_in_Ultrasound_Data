@@ -15,8 +15,7 @@
 
 | 名称      | ファイル名  | 備考     |
 | ---------- | ---- | ------ |
-|データの確認 | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) |  |
-|画像サイズ違いについての整合調査|[Imagesize_investigation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/Imagesize_investigation.ipynb)     |  |
+|データの確認 | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) | |
 |apo_fascセグメンテーション|[segmentation.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/segmentation.ipynb)||
 |モデルベースライン(.pth)|[UMUD Challenge dataset](https://www.kaggle.com/datasets/nagatakengo/segmentation-baseline-models)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
