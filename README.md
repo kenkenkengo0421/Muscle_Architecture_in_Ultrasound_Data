@@ -22,7 +22,7 @@
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
 
 
-# 評価
+# 評価指標
 
 提出された提案は、3つのアーキテクチャ変数すべてにおける予測誤差を測定するUMUDスコアを使用して評価されます。
 
@@ -48,7 +48,77 @@
 
 # ローカルでの指標（この指標をもとに改善）
 
-## 主指標：Normalized MAE
+## 主指標：Validation Dice
+
+予測maskと正解maskの一致度を評価する。
+
+```math
+\mathrm{Dice}
+=
+\frac{2TP}
+{2TP + FP + FN}
+```
+
+- `TP`：正解maskが1で、予測maskも1だった画素
+- `FP`：正解maskは0だが、予測maskを1とした画素
+- `FN`：正解maskは1だが、予測maskを0とした画素
+- apo / fasc それぞれで確認する
+- 大きいほど良い
+- モデル保存時の主な判断基準とする
+
+
+## 副指標：Validation Loss
+
+学習時の予測誤差を確認する。
+
+
+```math
+\mathrm{Loss}
+=
+\mathrm{BCEWithLogitsLoss}
++
+\mathrm{DiceLoss}
+```
+
+
+### BCEWithLogitsLoss
+
+
+```math
+\mathrm{BCE}
+=
+-\left[
+w \, y \log(p)
++
+(1-y)\log(1-p)
+\right]
+```
+
+- `y`：正解maskの値（0 または 1）
+- `p`：モデルが予測した確率
+- `w`：正例に対する重み（pos_weight）
+- apo：pos_weight = 1.5
+- fasc：pos_weight = 15
+
+### DiceLoss
+
+```math
+\mathrm{DiceLoss}
+=
+1
+-
+\frac{2\sum (p \cdot y)}
+{\sum p + \sum y}
+```
+
+- 小さいほど良い
+- 学習状態の確認用として使用する
+- Validation Diceと合わせて確認する
+
+
+## 最終評価：Kaggle Public Score
+
+モデル完成後、submissionを作成してKaggle上で確認する。
 
 ```math
 \mathrm{Score}
@@ -67,24 +137,8 @@
 - FL の許容値：12 mm
 - MT の許容値：3 mm
 - 小さいほど良い
+- ローカルでは正解 PA / FL / MT が存在しないため、直接計算しない
 
-
-## 副指標：予測失敗率
-
-```math
-\mathrm{Failure\ Rate}
-=
-\frac{\mathrm{Failed\ Images}}
-{\mathrm{Total\ Images}}
-```
-
-予測失敗の例：
-
-- PA が NaN
-- FL が NaN
-- MT が NaN
-- apo が正常に抽出できない
-- fascicle line が抽出できない
 
 
 
