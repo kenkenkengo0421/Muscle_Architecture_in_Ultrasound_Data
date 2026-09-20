@@ -16,3 +16,6 @@ log.txt
 .idea/
 
 *.csv
+
+__pycache__/
+*.pyc
