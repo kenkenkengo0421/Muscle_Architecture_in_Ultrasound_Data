@@ -1,3 +1,800 @@
+ Mounted at /content/drive
+=============================================
+実行開始時間: 2026-09-22 11:07:42 JST
+=============================================
+device: cuda
+GPU: NVIDIA A100-SXM4-80GB
+
+=============================================
+fasc lr=0.001 pos_weight=8 segmentation
+=============================================
+=============================================
+
+        
+        From the URL discussion below, there is duplicate data in the official dataset.
+        To prevent data leak between train / validation
+        Duplicate deletion processed  
+        
+        下記URLディスカッションより、公式datasetに重複データがあり、
+        train / validation間のデータリークを防止する為
+        重複削除処理しました。.....
+        
+        引用
+        https://www.kaggle.com/competitions/umud-challenge-muscle-architecture-in-ultrasound-data/discussion/740356
+        
+        
+Dataset duplicate removal
+before: 2761
+after: 2091
+removed: 670
+=============================================
+device: cuda
+pos_weight: 8
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 1/10
+train loss: 1.0102495495497326
+validation loss: 0.9667269008500236
+validation Dice: 0.1800707528462421
+validation best threshold: 0.3
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.1800707528462421
+threshold: 0.3
+epoch: 1
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 2/10
+train loss: 1.0705047688986127
+validation loss: 0.9516439344201769
+validation Dice: 0.18556046618773783
+validation best threshold: 0.6
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.18556046618773783
+threshold: 0.6
+epoch: 2
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 3/10
+train loss: 0.9470717131235953
+validation loss: 0.9498701890309652
+validation Dice: 0.19287136002211408
+validation best threshold: 0.44
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.19287136002211408
+threshold: 0.44
+epoch: 3
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 4/10
+train loss: 0.9403815423472647
+validation loss: 0.9383974835986183
+validation Dice: 0.19166921583932828
+validation best threshold: 0.64
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 5/10
+train loss: 0.9350283719135813
+validation loss: 0.93440658336594
+validation Dice: 0.1948945157217269
+validation best threshold: 0.52
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.1948945157217269
+threshold: 0.52
+epoch: 5
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 6/10
+train loss: 0.9317904151797864
+validation loss: 0.9359270569824037
+validation Dice: 0.19455880145077556
+validation best threshold: 0.66
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 7/10
+train loss: 0.9307258437124736
+validation loss: 0.9325920522212983
+validation Dice: 0.1959065040516449
+validation best threshold: 0.78
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.1959065040516449
+threshold: 0.78
+epoch: 7
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 8/10
+train loss: 0.9275046921375265
+validation loss: 0.9276382375331153
+validation Dice: 0.20092343047608816
+validation best threshold: 0.44
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.20092343047608816
+threshold: 0.44
+epoch: 8
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 9/10
+train loss: 0.9242590079039478
+validation loss: 0.9249515255292257
+validation Dice: 0.2023613388434735
+validation best threshold: 0.52
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.2023613388434735
+threshold: 0.52
+epoch: 9
+lr: 0.001
+pos_weight: 8
+******************************
+=============================================
+fasc lr=0.001 pos_weight=8 epoch: 10/10
+train loss: 0.9241915628955695
+validation loss: 0.9267994605359577
+validation Dice: 0.20216330021181558
+validation best threshold: 0.52
+
+=================================================
+fasc lr=0.001 pos_weight=8
+lr: 0.001
+pos_weight: 8
+train loss: 0.9242590079039478
+validation loss: 0.9249515255292257
+best epoch: 9
+best validation Dice: 0.2023613388434735
+best threshold: 0.52
+=================================================
+
+
+=============================================
+fasc lr=0.001 pos_weight=10 segmentation
+=============================================
+=============================================
+
+        
+        From the URL discussion below, there is duplicate data in the official dataset.
+        To prevent data leak between train / validation
+        Duplicate deletion processed  
+        
+        下記URLディスカッションより、公式datasetに重複データがあり、
+        train / validation間のデータリークを防止する為
+        重複削除処理しました。.....
+        
+        引用
+        https://www.kaggle.com/competitions/umud-challenge-muscle-architecture-in-ultrasound-data/discussion/740356
+        
+        
+Dataset duplicate removal
+before: 2761
+after: 2091
+removed: 670
+=============================================
+device: cuda
+pos_weight: 10
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 1/10
+train loss: 1.043676840417693
+validation loss: 0.9911545654137929
+validation Dice: 0.17629272805741267
+validation best threshold: 0.32
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 2/10
+train loss: 0.974701230677121
+validation loss: 0.9656353669507163
+validation Dice: 0.19231562095353497
+validation best threshold: 0.76
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 3/10
+train loss: 0.962479118810316
+validation loss: 0.9612830576442537
+validation Dice: 0.19434973881466389
+validation best threshold: 0.66
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 4/10
+train loss: 0.9571890450978393
+validation loss: 0.9555366050629389
+validation Dice: 0.19189481459748642
+validation best threshold: 0.7
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 5/10
+train loss: 0.9523686564139773
+validation loss: 0.9495262089229766
+validation Dice: 0.1972846204302812
+validation best threshold: 0.74
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 6/10
+train loss: 0.9491828711409318
+validation loss: 0.9529329251675379
+validation Dice: 0.19418955803697344
+validation best threshold: 0.56
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 7/10
+train loss: 0.9486165355409731
+validation loss: 0.9486024391083491
+validation Dice: 0.19877660313625722
+validation best threshold: 0.82
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 8/10
+train loss: 0.9456687346457294
+validation loss: 0.9461300744896843
+validation Dice: 0.20146330994205291
+validation best threshold: 0.46
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 9/10
+train loss: 0.9425059576924337
+validation loss: 0.9423701229549589
+validation Dice: 0.202994307949333
+validation best threshold: 0.6
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.202994307949333
+threshold: 0.6
+epoch: 9
+lr: 0.001
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.001 pos_weight=10 epoch: 10/10
+train loss: 0.9426028754865153
+validation loss: 0.9457973335470472
+validation Dice: 0.20323812257407
+validation best threshold: 0.52
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.20323812257407
+threshold: 0.52
+epoch: 10
+lr: 0.001
+pos_weight: 10
+******************************
+
+=================================================
+fasc lr=0.001 pos_weight=10
+lr: 0.001
+pos_weight: 10
+train loss: 0.9426028754865153
+validation loss: 0.9457973335470472
+best epoch: 10
+best validation Dice: 0.20323812257407
+best threshold: 0.52
+=================================================
+
+
+=============================================
+fasc lr=0.001 pos_weight=12 segmentation
+=============================================
+=============================================
+
+        
+        From the URL discussion below, there is duplicate data in the official dataset.
+        To prevent data leak between train / validation
+        Duplicate deletion processed  
+        
+        下記URLディスカッションより、公式datasetに重複データがあり、
+        train / validation間のデータリークを防止する為
+        重複削除処理しました。.....
+        
+        引用
+        https://www.kaggle.com/competitions/umud-challenge-muscle-architecture-in-ultrasound-data/discussion/740356
+        
+        
+Dataset duplicate removal
+before: 2761
+after: 2091
+removed: 670
+=============================================
+device: cuda
+pos_weight: 12
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 1/10
+train loss: 1.3175546006437695
+validation loss: 1.09092667500178
+validation Dice: 0.1396106737747367
+validation best threshold: 0.36
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 2/10
+train loss: 1.1575910473269138
+validation loss: 1.0563673229444595
+validation Dice: 0.13491191042562078
+validation best threshold: 0.44
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 3/10
+train loss: 1.0152516357208554
+validation loss: 1.0023066418511526
+validation Dice: 0.1768502847165408
+validation best threshold: 0.56
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 4/10
+train loss: 0.9961680777050091
+validation loss: 0.9917024189517611
+validation Dice: 0.1781219646516225
+validation best threshold: 0.64
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 5/10
+train loss: 0.9937208063864822
+validation loss: 0.9836458492846716
+validation Dice: 0.18533705940052148
+validation best threshold: 0.7
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 6/10
+train loss: 0.9815233951550352
+validation loss: 0.9815851512409391
+validation Dice: 0.18640258023045775
+validation best threshold: 0.7
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 7/10
+train loss: 12.604168680224692
+validation loss: 1.07816082239151
+validation Dice: 0.1112176651467249
+validation best threshold: 0.4
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 8/10
+train loss: 1.0674826470716148
+validation loss: 1.067160926830201
+validation Dice: 0.15186419509011087
+validation best threshold: 0.3
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 9/10
+train loss: 1.02980395616812
+validation loss: 1.0217153114931925
+validation Dice: 0.16924940553636322
+validation best threshold: 0.42
+=============================================
+fasc lr=0.001 pos_weight=12 epoch: 10/10
+train loss: 1.0149123492566021
+validation loss: 1.011895546742848
+validation Dice: 0.17447805409364275
+validation best threshold: 0.8
+
+=================================================
+fasc lr=0.001 pos_weight=12
+lr: 0.001
+pos_weight: 12
+train loss: 0.9815233951550352
+validation loss: 0.9815851512409391
+best epoch: 6
+best validation Dice: 0.18640258023045775
+best threshold: 0.7
+=================================================
+
+
+=============================================
+fasc lr=0.001 pos_weight=15 segmentation
+=============================================
+=============================================
+
+        
+        From the URL discussion below, there is duplicate data in the official dataset.
+        To prevent data leak between train / validation
+        Duplicate deletion processed  
+        
+        下記URLディスカッションより、公式datasetに重複データがあり、
+        train / validation間のデータリークを防止する為
+        重複削除処理しました。.....
+        
+        引用
+        https://www.kaggle.com/competitions/umud-challenge-muscle-architecture-in-ultrasound-data/discussion/740356
+        
+        
+Dataset duplicate removal
+before: 2761
+after: 2091
+removed: 670
+=============================================
+device: cuda
+pos_weight: 15
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 1/10
+train loss: 1.1013647386331877
+validation loss: 1.1559433477265495
+validation Dice: 0.04584021902671238
+validation best threshold: 0.34
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 2/10
+train loss: 1.0808774877393075
+validation loss: 1.0234537570249467
+validation Dice: 0.17839813973627994
+validation best threshold: 0.68
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 3/10
+train loss: 1.0156685768417195
+validation loss: 1.0199378070377167
+validation Dice: 0.18918818315000785
+validation best threshold: 0.42
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 4/10
+train loss: 1.0026736489751122
+validation loss: 0.9970371541522798
+validation Dice: 0.19065863541022088
+validation best threshold: 0.76
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 5/10
+train loss: 0.9960790177423988
+validation loss: 0.9905971757003239
+validation Dice: 0.1966395822696804
+validation best threshold: 0.76
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 6/10
+train loss: 0.9913954953685331
+validation loss: 0.9938759729975746
+validation Dice: 0.19307143024250253
+validation best threshold: 0.76
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 7/10
+train loss: 0.9894502670570994
+validation loss: 0.9870786445481436
+validation Dice: 0.19911340720266166
+validation best threshold: 0.84
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 8/10
+train loss: 0.9861390001751019
+validation loss: 0.9896771308921632
+validation Dice: 0.19716990096501044
+validation best threshold: 0.6
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 9/10
+train loss: 0.9832597609484595
+validation loss: 0.9827199714524405
+validation Dice: 0.20203471968214642
+validation best threshold: 0.72
+=============================================
+fasc lr=0.001 pos_weight=15 epoch: 10/10
+train loss: 0.9828856682235544
+validation loss: 0.9862435258570171
+validation Dice: 0.2026282031804244
+validation best threshold: 0.62
+
+=================================================
+fasc lr=0.001 pos_weight=15
+lr: 0.001
+pos_weight: 15
+train loss: 0.9828856682235544
+validation loss: 0.9862435258570171
+best epoch: 10
+best validation Dice: 0.2026282031804244
+best threshold: 0.62
+=================================================
+
+
+=============================================
+fasc lr=0.0005 pos_weight=10 segmentation
+=============================================
+=============================================
+
+        
+        From the URL discussion below, there is duplicate data in the official dataset.
+        To prevent data leak between train / validation
+        Duplicate deletion processed  
+        
+        下記URLディスカッションより、公式datasetに重複データがあり、
+        train / validation間のデータリークを防止する為
+        重複削除処理しました。.....
+        
+        引用
+        https://www.kaggle.com/competitions/umud-challenge-muscle-architecture-in-ultrasound-data/discussion/740356
+        
+        
+Dataset duplicate removal
+before: 2761
+after: 2091
+removed: 670
+=============================================
+device: cuda
+pos_weight: 10
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 1/20
+train loss: 1.0163314897192723
+validation loss: 0.9588170372304462
+validation Dice: 0.20228609406640988
+validation best threshold: 0.3
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 2/20
+train loss: 0.9252626215727136
+validation loss: 0.9097293632371085
+validation Dice: 0.22497352859672132
+validation best threshold: 0.84
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.22497352859672132
+threshold: 0.84
+epoch: 2
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 3/20
+train loss: 0.9101484379414736
+validation loss: 0.9063143840857915
+validation Dice: 0.22984001475160185
+validation best threshold: 0.5
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.22984001475160185
+threshold: 0.5
+epoch: 3
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 4/20
+train loss: 0.9012758222065473
+validation loss: 0.9023468241805122
+validation Dice: 0.23192694729028507
+validation best threshold: 0.86
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.23192694729028507
+threshold: 0.86
+epoch: 4
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 5/20
+train loss: 0.8956496604321676
+validation loss: 0.8900954036485581
+validation Dice: 0.2373522299612897
+validation best threshold: 0.84
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.2373522299612897
+threshold: 0.84
+epoch: 5
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 6/20
+train loss: 0.889410723054238
+validation loss: 0.8871463287444342
+validation Dice: 0.24104236791606345
+validation best threshold: 0.8
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.24104236791606345
+threshold: 0.8
+epoch: 6
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 7/20
+train loss: 0.8861097041071887
+validation loss: 0.8899974417118799
+validation Dice: 0.24361854644761483
+validation best threshold: 0.9
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.24361854644761483
+threshold: 0.9
+epoch: 7
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 8/20
+train loss: 0.8829074876302737
+validation loss: 0.8871678139482225
+validation Dice: 0.24630290566140775
+validation best threshold: 0.46
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.24630290566140775
+threshold: 0.46
+epoch: 8
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 9/20
+train loss: 0.8778466848950637
+validation loss: 0.8785631168456305
+validation Dice: 0.25138004594795527
+validation best threshold: 0.6
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.25138004594795527
+threshold: 0.6
+epoch: 9
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 10/20
+train loss: 0.8762893825769424
+validation loss: 0.8798851873193468
+validation Dice: 0.2490902648113066
+validation best threshold: 0.7
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 11/20
+train loss: 0.8736461616303932
+validation loss: 0.8718423088391621
+validation Dice: 0.25500616921500774
+validation best threshold: 0.84
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.25500616921500774
+threshold: 0.84
+epoch: 11
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 12/20
+train loss: 0.8702687988298361
+validation loss: 0.8692851310684567
+validation Dice: 0.25827746633531756
+validation best threshold: 0.82
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.25827746633531756
+threshold: 0.82
+epoch: 12
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 13/20
+train loss: 0.8666308064494977
+validation loss: 0.8731066848550524
+validation Dice: 0.2580676918364933
+validation best threshold: 0.78
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 14/20
+train loss: 0.8641982348769476
+validation loss: 0.868524664356595
+validation Dice: 0.25886543735411377
+validation best threshold: 0.56
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.25886543735411377
+threshold: 0.56
+epoch: 14
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 15/20
+train loss: 0.8610112856021909
+validation loss: 0.8648141690662929
+validation Dice: 0.26199996604183645
+validation best threshold: 0.82
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.26199996604183645
+threshold: 0.82
+epoch: 15
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 16/20
+train loss: 0.8576178577100261
+validation loss: 0.8700602786881583
+validation Dice: 0.2618974645887627
+validation best threshold: 0.9
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 17/20
+train loss: 0.8581814304635855
+validation loss: 0.8632019000394003
+validation Dice: 0.2643116788592838
+validation best threshold: 0.66
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.2643116788592838
+threshold: 0.66
+epoch: 17
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 18/20
+train loss: 0.8546722492105082
+validation loss: 0.8625442405541738
+validation Dice: 0.26294440959957743
+validation best threshold: 0.86
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 19/20
+train loss: 0.8527048404849887
+validation loss: 0.8627063913004739
+validation Dice: 0.26696539135636477
+validation best threshold: 0.74
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.26696539135636477
+threshold: 0.74
+epoch: 19
+lr: 0.0005
+pos_weight: 10
+******************************
+=============================================
+fasc lr=0.0005 pos_weight=10 epoch: 20/20
+train loss: 0.8512341037891699
+validation loss: 0.8562141903809138
+validation Dice: 0.2675579329905804
+validation best threshold: 0.74
+
+***** GLOBAL BEST UPDATE *****
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+Dice: 0.2675579329905804
+threshold: 0.74
+epoch: 20
+lr: 0.0005
+pos_weight: 10
+******************************
+
+=================================================
+fasc lr=0.0005 pos_weight=10
+lr: 0.0005
+pos_weight: 10
+train loss: 0.8512341037891699
+validation loss: 0.8562141903809138
+best epoch: 20
+best validation Dice: 0.2675579329905804
+best threshold: 0.74
+=================================================
+
+
+=============================================
+FASC BEST RESULT
+=============================================
+lr: 0.0005
+pos_weight: 10
+best epoch: 20
+best threshold: 0.74
+validation loss: 0.8562141903809138
+best validation Dice: 0.2675579329905804
+model: /content/drive/MyDrive/colab/UMUD/fasc_model.pth
+=============================================
+
+=============================================
+実行開始時間: 2026-09-22 11:07:42 JST
+すべての処理が終了した時間: 2026-09-22 13:31:57 JST
+総処理時間: 02:24:15
+=============================================
+Google Driveへの書き込みを確定します
+Google Driveへの保存が完了しました
+Colabランタイムを切断します
+
+
+
+
 v1.2 
 Public Score:1.39707
 
