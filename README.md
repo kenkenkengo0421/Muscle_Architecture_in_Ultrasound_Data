@@ -169,6 +169,53 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
+# クローンした後の構成
+
+```
+
+Muscle_Architecture_in_Ultrasound_Data/
+
+├── README.md
+├── Source 
+│   ├── f_1.py
+│   └── f_2.py
+├── apo_model.ipynb
+├── content　 #(コードにより自動生成)
+|        └──  #(公式の画像image, mask, testデータ)
+├── fasc_model.ipynb
+├── img
+│   └── img.png
+├── memo.txt
+├── requirements.txt
+├── segmentation_baseline_models
+│   ├── apo_model.pth    #(コードにより自動生成)
+│   └── fasc_model.pth   #(コードにより自動生成)
+├── study.ipynb
+├── submission.csv       #(コードにより自動生成)
+├── submission_of_predict.ipynb
+├── umud-challenge-muscle-architecture-in-ultrasound-data.zip    #(公式よりDLしてください)
+└── vest_model_nb
+    ├── apo
+    |     └──...
+    └── fasc
+        　└──...
+
+
+step
+1. apo_model.ipynb実行, fasc_model.ipynb実行
+↓
+2. segmentation_baseline_models/apo_model.pth生成
+   segmentation_baseline_models/fasc_model.pth生成
+  （colab環境の場合は手動で配置）
+↓
+3. submission_of_predict.ipynb実行
+↓
+4. submission.csv生成
+↓
+5. kaggle提出
+
+```
+
 
 
 
