@@ -21,7 +21,7 @@
 |モデルベースライン(.pth)|[UMUD Challenge dataset](https://www.kaggle.com/datasets/nagatakengo/segmentation-baseline-models)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
 |モデル作成時のログ|[memo.txt](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/memo.txt)||
-
+|Diceスコアが高いモデル作成時のnotebook <br> （Diceが高いが、kaggle publicスコアが低いもの、一時保存用）|[vest_model_nb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/vest_model_nb)||
 
 # 評価指標
 
