@@ -18,10 +18,9 @@
 |データの確認 | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) | |
 |apoセグメンテーション|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
 |fascセグメンテーション|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
-|モデルベースライン(.pth)|[UMUD Challenge dataset](https://www.kaggle.com/datasets/nagatakengo/segmentation-baseline-models)||
+|モデル(.pth)<br>(datasetのv__modelフォルダが、現在採用しているモデル)|[UMUD Challenge dataset](https://www.kaggle.com/datasets/nagatakengo/segmentation-baseline-models)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
-|モデル作成時のログ|[memo.txt](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/memo.txt)||
-|Diceスコアが高いモデル作成時のnotebook <br> （Diceが高いが、kaggle publicスコアが低いもの、一時保存用）|[vest_model_nb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/vest_model_nb)||
+|Diceスコアが高いモデル作成時のnotebook <br> （Diceが高いが、kaggle publicスコアが低いもの、一時保存用）|[vest_model_nb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
 
 # 評価指標
 
@@ -47,7 +46,7 @@
 
 
 
-# ローカルでの指標（この指標をもとに改善）
+# モデルの指標（この指標をもとに改善）
 
 ## 主指標：Validation Dice
 
@@ -145,7 +144,7 @@ w \, y \log(p)
 
 # 環境
 
-* linux
+* `Linux`- `Ubuntu`
 
 ```
 git clone https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data.git
@@ -202,7 +201,7 @@ Muscle_Architecture_in_Ultrasound_Data/
 
 
 step
-1. apo_model.ipynb実行, fasc_model.ipynb実行
+1. apo_model.ipynb実行, fasc_model.ipynb実行(colabA100で実行 or ローカルcudaで実行)
 ↓
 2. segmentation_baseline_models/apo_model.pth生成
    segmentation_baseline_models/fasc_model.pth生成
