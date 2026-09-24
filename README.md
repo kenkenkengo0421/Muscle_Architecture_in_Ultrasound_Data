@@ -20,7 +20,7 @@
 |fascセグメンテーション|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
 |モデル(.pth)<br>(datasetのv__modelフォルダが、現在採用しているモデル)|[UMUD Challenge dataset](https://www.kaggle.com/datasets/nagatakengo/segmentation-baseline-models)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
-|Diceスコアが高いモデル作成時のnotebook <br> （Diceが高いが、kaggle publicスコアが低いもの、一時保存用）|[vest_model_nb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
+|モデル作成時のnotebook |[vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
 
 # 評価指標
 
@@ -97,8 +97,7 @@ w \, y \log(p)
 - `y`：正解maskの値（0 または 1）
 - `p`：モデルが予測した確率
 - `w`：正例に対する重み（pos_weight）
-- apo：pos_weight = 1.5
-- fasc：pos_weight = 15
+
 
 ### DiceLoss
 
@@ -140,6 +139,9 @@ w \, y \log(p)
 - ローカルでは正解 PA / FL / MT が存在しないため、直接計算しない
 
 # fascの検証した値
+
+* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
+
 
 |     lr | pos_weight | epoch数 |   Best Dice | Best epoch | Best threshold |    Val Loss |
 | -----: | ---------: | -----: | ----------: | ---------: | -------------: | ----------: |
