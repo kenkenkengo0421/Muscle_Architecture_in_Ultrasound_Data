@@ -140,8 +140,11 @@ w \, y \log(p)
 
 # fascの検証した値
 
-* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
 
+
+<details><summary></summary>
+
+* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
 
 |     lr | pos_weight | epoch数 |   Best Dice | Best epoch | Best threshold |    Val Loss |
 | -----: | ---------: | -----: | ----------: | ---------: | -------------: | ----------: |
@@ -159,7 +162,7 @@ w \, y \log(p)
 | 0.0006 | 8 | 40 | 0.27510 | 39 | 0.78 | 0.83554 |
 | 0.0006 | 12 | 40 | 0.28407 | 40 | 0.88 | 0.85224 |
 
-
+</details>
 
 # 環境
 
