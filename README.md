@@ -146,6 +146,8 @@ w \, y \log(p)
 
 * [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
 
+* 副指標：Validation Loss検証
+
 |     lr | pos_weight | epoch数 |   Best Dice | Best epoch | Best threshold |    Val Loss |
 | -----: | ---------: | -----: | ----------: | ---------: | -------------: | ----------: |
 |  0.001 |          8 |     10 |     0.20236 |          9 |           0.52 |     0.92495 |
@@ -161,6 +163,14 @@ w \, y \log(p)
 | 0.0008 |         10 |     40 |     0.21589 |         39 |           0.76 |     0.92668 |
 | 0.0006 | 8 | 40 | 0.27510 | 39 | 0.78 | 0.83554 |
 | 0.0006 | 12 | 40 | 0.28407 | 40 | 0.88 | 0.85224 |
+
+* [tverskyLoss/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/tverskyLoss)
+
+* 副指標：tverskyLoss検証
+
+| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0.0006 | 10 | 40 | 0.29333 | 39 | 0.92 | 0.76451 |
 
 </details>
 
