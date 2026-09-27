@@ -42,7 +42,7 @@
 
 
 
-各変数の誤差は、異なる単位や尺度であっても比較可能な影響を確保するために、あらかじめ定義された許容値によって正規化されます。スコア**が低いほど、パフォーマンスが優れていることを示します。**
+各変数の誤差は、異なる単位や尺度であっても比較可能な影響を確保するために、あらかじめ定義された許容値によって正規化されます。スコアが低いほど、パフォーマンスが優れていることを示します。
 
 
 
@@ -138,13 +138,29 @@ w \, y \log(p)
 - 小さいほど良い
 - ローカルでは正解 PA / FL / MT が存在しないため、直接計算しない
 
-# fascの検証した値
 
+# モデルの検証結果
 
+* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
+
+## apo検証
 
 <details><summary></summary>
 
-* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
+* 副指標：Validation Loss検証
+
+| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0.001 | 1.5 | 20 | 0.73735 | 19 | 0.18 | 0.35728 |
+| 0.0005 | 1.5 | 20 | 0.79126 | 19 | 0.20 | 0.28659 |
+
+
+</details>
+
+## fasc検証
+
+
+<details><summary></summary>
 
 * 副指標：Validation Loss検証
 
@@ -200,7 +216,9 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-# クローンした後の構成
+# クローンした後の構成と手順
+
+<details><summary></summary>
 
 ```
 
@@ -247,7 +265,7 @@ step
 
 ```
 
-
+</details>
 
 
 
