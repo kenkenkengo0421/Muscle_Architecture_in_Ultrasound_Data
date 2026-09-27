@@ -143,7 +143,7 @@ w \, y \log(p)
 
 * [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
 
-## apo検証
+## apo検証(UNet)
 
 <details><summary></summary>
 
@@ -157,7 +157,7 @@ w \, y \log(p)
 
 </details>
 
-## fasc検証
+## fasc検証(UNet)
 
 
 <details><summary></summary>
