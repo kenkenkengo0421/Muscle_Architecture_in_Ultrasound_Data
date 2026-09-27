@@ -16,8 +16,9 @@
 | 名称      | ファイル名  | 備考     |
 | ---------- | ---- | ------ |
 |データの確認 | [study.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/study.ipynb) | |
-|apoセグメンテーション|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
-|fascセグメンテーション|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
+|apoセグメンテーション(UNet)|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
+|fascセグメンテーション(UNet)|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
+|fascセグメンテーション(DeepLabV3+)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/DeepLabV3+_fasc_model.ipynb)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
 |モデル作成時のnotebook |[vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
 
@@ -188,6 +189,15 @@ w \, y \log(p)
 | lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 0.0006 | 10 | 40 | 0.29333 | 39 | 0.92 | 0.76451 |
+
+
+## fasc検証(DeepLabV3+)
+
+| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0.0004 | 10 | 40 | 0.28435 | 39 | 0.54 | 0.84064 |
+| 0.0006 | 10 | 40 | 0.28829 | 39 | 0.54 | 0.84616 |
+
 
 </details>
 
