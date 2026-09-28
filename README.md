@@ -19,9 +19,9 @@
 |apoセグメンテーション(UNet)|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
 |fascセグメンテーション(UNet)|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
 |fascセグメンテーション(DeepLabV3+)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/DeepLabV3+_fasc_model.ipynb)||
-|fascアンサンブル(UNet + DeepLabV3+)|[fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_ensemble.ipynb)||
-|予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
-|モデル作成時のnotebook |[vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
+|fascアンサンブル検証(UNet + DeepLabV3+)|[fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_ensemble.ipynb)||
+|予測と提出|[submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict_ensemble_fasc.ipynb)||
+
 
 # 評価指標
 
@@ -142,7 +142,6 @@ w \, y \log(p)
 
 # モデルの検証結果
 
-* [vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)
 
 ## apo検証(UNet)
 
@@ -242,47 +241,58 @@ jupyter lab
 <details><summary></summary>
 
 ```
+Muscle_Architecture_in_Ultrasound_Data$ tree
 
-Muscle_Architecture_in_Ultrasound_Data/
-
+.
+├── DeepLabV3+_fasc_model.ipynb
 ├── README.md
-├── Source 
+├── Source
 │   ├── f_1.py
 │   └── f_2.py
 ├── apo_model.ipynb
-├── content　 #(コードにより自動生成)
-|        └──  #(公式の画像image, mask, testデータ)
+├── best_model_nb_UNet
+│   ├── apo
+│   └── fasc
+├── best_model_nb_deepLabV3+
+│   └── fasc
+├── content                      #(コードにより自動生成)
+│   └── my_dataset
+|                └──             #(公式の画像image, mask, testデータ)
+├── fasc_ensemble.ipynb
 ├── fasc_model.ipynb
 ├── img
 │   └── img.png
-├── memo.txt
 ├── requirements.txt
 ├── segmentation_baseline_models
-│   ├── apo_model.pth    #(コードにより自動生成)
-│   └── fasc_model.pth   #(コードにより自動生成)
+│   ├── DeepLabV3_fasc_model.pth #(コードにより自動生成)
+│   ├── apo_model.pth            #(コードにより自動生成)
+│   └── fasc_model.pth           #(コードにより自動生成)
 ├── study.ipynb
-├── submission.csv       #(コードにより自動生成)
-├── submission_of_predict.ipynb
-├── umud-challenge-muscle-architecture-in-ultrasound-data.zip    #(公式よりDLしてください)
-└── vest_model_nb
-    ├── apo
-    |     └──...
-    └── fasc
-        　└──...
+├── submission.csv               #(コードにより自動生成)
+├── submission_of_predict_ensemble_fasc.ipynb
+├── tverskyLoss
+│   └── Tversky_loss.md
+└── umud-challenge-muscle-architecture-in-ultrasound-data.zip #(公式よりDL)
+
+
 
 
 step
-1. apo_model.ipynb実行, fasc_model.ipynb実行(colabA100で実行 or ローカルcudaで実行)
+
+1. apo_model.ipynb実行, fasc_model.ipynb, DeepLabV3+_fasc_model.ipynb 実行(colabで実行 or ローカルcudaで実行)
 ↓
 2. segmentation_baseline_models/apo_model.pth生成
    segmentation_baseline_models/fasc_model.pth生成
+   segmentation_baseline_models/DeepLabV3_fasc_model.pth生成
   （colab環境の場合は手動で配置）
 ↓
-3. submission_of_predict.ipynb実行
+3. fasc_ensemble.ipynb 実行、アンサンブルの重み、しきい値決定
 ↓
-4. submission.csv生成
+4. submission_of_predict_ensemble_fasc.ipynb実行
 ↓
-5. kaggle提出
+5. submission.csv生成
+↓
+6. kaggle提出
 
 ```
 
