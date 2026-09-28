@@ -19,6 +19,7 @@
 |apoセグメンテーション(UNet)|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
 |fascセグメンテーション(UNet)|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
 |fascセグメンテーション(DeepLabV3+)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/DeepLabV3+_fasc_model.ipynb)||
+|fascアンサンブル(UNet + DeepLabV3+)|[fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_ensemble.ipynb)||
 |予測と提出|[submission_of_predict.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict.ipynb)||
 |モデル作成時のnotebook |[vest_model_nb/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/best_model_nb)||
 
@@ -199,6 +200,14 @@ w \, y \log(p)
 | 0.0006 | 10 | 40 | 0.28829 | 39 | 0.54 | 0.84616 |
 | 0.0005 | 10 | 40 | 0.28763 | 39 | 0.52 | 0.83855 |
 | 0.0007 | 10 | 40 | 0.28805| 39 | 0.52 | 0.84466 |
+
+## fascアンサンブル検証(UNet + DeepLabV3+)
+
+|U-Net weight|DeepLabV3+ weight|best threshold|best validation Dice|
+|---:|---:|---:|---:|
+|0.5|0.5|0.52|0.309762|
+
+
 
 </details>
 
