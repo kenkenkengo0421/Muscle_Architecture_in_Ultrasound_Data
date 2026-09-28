@@ -200,11 +200,7 @@ w \, y \log(p)
 | 0.0005 | 10 | 40 | 0.28763 | 39 | 0.52 | 0.83855 |
 | 0.0007 | 10 | 40 | 0.28805| 39 | 0.52 | 0.84466 |
 
-## fascアンサンブル検証(UNet + DeepLabV3+)
 
-|U-Net weight|DeepLabV3+ weight|best threshold|best validation Dice|
-|---:|---:|---:|---:|
-|0.5|0.5|0.52|0.309762|
 
 
 
@@ -286,7 +282,7 @@ step
    segmentation_baseline_models/DeepLabV3_fasc_model.pth生成
   （colab環境の場合は手動で配置）
 ↓
-3. fasc_ensemble.ipynb 実行、アンサンブルの重み、しきい値決定
+3. fasc_ensemble.ipynb 実行、アンサンブル時の両モデルの重み比率、しきい値を自動で決定
 ↓
 4. submission_of_predict_ensemble_fasc.ipynb実行
 ↓
