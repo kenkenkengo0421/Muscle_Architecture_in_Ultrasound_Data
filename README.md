@@ -19,6 +19,7 @@
 |apoセグメンテーション(UNet)|[apo_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/apo_model.ipynb)||
 |fascセグメンテーション(UNet)|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
 |fascセグメンテーション(DeepLabV3+)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/DeepLabV3+_fasc_model.ipynb)||
+|fascセグメンテーション(FPN)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/FPN_fasc_model.ipynb)||
 |fascアンサンブル検証(UNet + DeepLabV3+)|[fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_ensemble.ipynb)||
 |予測と提出|[submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict_ensemble_fasc.ipynb)||
 
@@ -182,14 +183,6 @@ w \, y \log(p)
 | 0.0004 | 10 | 40 | 0.28081 | 39 | 0.82 | 0.84204 |
 | 0.0006 | 10 | 40 | 0.29802 | 32 | 0.46 | 0.82185 |
 
-* [tverskyLoss/](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/tree/main/tverskyLoss)
-
-* 副指標：tverskyLoss検証
-
-| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 0.0006 | 10 | 40 | 0.29333 | 39 | 0.92 | 0.76451 |
-
 
 ## fasc検証(DeepLabV3+)
 
@@ -201,7 +194,12 @@ w \, y \log(p)
 | 0.0007 | 10 | 40 | 0.28805| 39 | 0.52 | 0.84466 |
 
 
+## fasc検証(FPN)
 
+| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0.0004 | 10 | 40 | 0.28423 | 11 | 0.64 | 0.83904 |
+| 0.0006 | 10 | 40 | 0.28580 | 11 | 0.68 | 0.83411 |
 
 
 </details>
@@ -266,8 +264,6 @@ Muscle_Architecture_in_Ultrasound_Data$ tree
 ├── study.ipynb
 ├── submission.csv               #(コードにより自動生成)
 ├── submission_of_predict_ensemble_fasc.ipynb
-├── tverskyLoss
-│   └── Tversky_loss.md
 └── umud-challenge-muscle-architecture-in-ultrasound-data.zip #(公式よりDL)
 
 
