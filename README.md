@@ -22,8 +22,9 @@
 |fascセグメンテーション(FPN)|[FPN_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/FPN_fasc_model.ipynb)||
 |fascアンサンブル検証(UNet + DeepLabV3+)|[UNet_DeepLab_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_DeepLab_fasc_ensemble.ipynb)||
 |fascアンサンブル検証(UNet + FPN)|[UNet_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_FPN_fasc_ensemble.ipynb)||
-|予測と提出|[submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/submission_of_predict_ensemble_fasc.ipynb)||
-
+|fascアンサンブル検証(UNet + DeepLabV3+ + FPN)|[UNet_Deep_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_Deep_FPN_fasc_ensemble.ipynb)||
+|予測と提出|[best_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/best_submission_of_predict_ensemble_fasc.ipynb)||
+|予測と提出(テスト中)|[test_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/test_submission_of_predict_ensemble_fasc.ipynb)||
 
 # 評価指標
 
@@ -246,6 +247,7 @@ Muscle_Architecture_in_Ultrasound_Data$ tree
 │   ├── f_1.py
 │   └── f_2.py
 ├── UNet_DeepLab_fasc_ensemble.ipynb
+├── UNet_Deep_FPN_fasc_ensemble.ipynb
 ├── UNet_FPN_fasc_ensemble.ipynb
 ├── apo_model.ipynb
 ├── best_model_nb_FPN
@@ -255,9 +257,10 @@ Muscle_Architecture_in_Ultrasound_Data$ tree
 │   └── fasc
 ├── best_model_nb_deepLabV3+
 │   └── fasc
-├── content                      #(コードにより自動生成)
+├── best_submission_of_predict_ensemble_fasc.ipynb     #kaggleベストスコア
+├── content                                            #(コードにより自動生成)
 │   └── my_dataset
-|                └──             #(公式の画像image, mask, testデータ)
+|                └──                                   #(公式の画像image, mask, testデータ)
 ├── fasc_model.ipynb
 ├── img
 │   └── img.png
@@ -268,9 +271,9 @@ Muscle_Architecture_in_Ultrasound_Data$ tree
 │   ├── apo_model.pth              #(コードにより自動生成)
 │   └── fasc_model.pth             #(コードにより自動生成)
 ├── study.ipynb
-├── submission.csv               #(コードにより自動生成)
-├── submission_of_predict_ensemble_fasc.ipynb
-└── umud-challenge-muscle-architecture-in-ultrasound-data.zip #(公式よりDL)
+├── submission.csv                 #(コードにより自動生成)
+├── test_submission_of_predict_ensemble_fasc.ipynb
+└── umud-challenge-muscle-architecture-in-ultrasound-data.zip  #(公式よりDL)
 
 
 
