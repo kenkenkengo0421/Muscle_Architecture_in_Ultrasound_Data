@@ -165,7 +165,6 @@ w \, y \log(p)
 
 <details><summary></summary>
 
-* 副指標：Validation Loss検証
 
 |     lr | pos_weight | epoch数 |   Best Dice | Best epoch | Best threshold |    Val Loss |
 | -----: | ---------: | -----: | ----------: | ---------: | -------------: | ----------: |
@@ -185,8 +184,11 @@ w \, y \log(p)
 | 0.0004 | 10 | 40 | 0.28081 | 39 | 0.82 | 0.84204 |
 | 0.0006 | 10 | 40 | 0.29802 | 32 | 0.46 | 0.82185 |
 
+</details>
 
 ## fasc検証(DeepLabV3+)
+
+<details><summary></summary>
 
 | lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
 |---:|---:|---:|---:|---:|---:|---:|
@@ -195,8 +197,13 @@ w \, y \log(p)
 | 0.0005 | 10 | 40 | 0.28763 | 39 | 0.52 | 0.83855 |
 | 0.0007 | 10 | 40 | 0.28805| 39 | 0.52 | 0.84466 |
 
+</details>
 
 ## fasc検証(FPN)
+
+<details><summary></summary>
+
+
 
 | lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
 |---:|---:|---:|---:|---:|---:|---:|
