@@ -23,8 +23,8 @@
 |fascアンサンブル検証(UNet + DeepLabV3+)|[UNet_DeepLab_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_DeepLab_fasc_ensemble.ipynb)||
 |fascアンサンブル検証(UNet + FPN)|[UNet_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_FPN_fasc_ensemble.ipynb)||
 |fascアンサンブル検証(UNet + DeepLabV3+ + FPN)|[UNet_Deep_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_Deep_FPN_fasc_ensemble.ipynb)||
-|予測と提出|[best_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/best_submission_of_predict_ensemble_fasc.ipynb)||
-|予測と提出(テスト中)|[test_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/test_submission_of_predict_ensemble_fasc.ipynb)||
+|予測と提出(メイン)|[best_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/best_submission_of_predict_ensemble_fasc.ipynb)||
+|予測と提出(サブ)|[test_submission_of_predict_ensemble_fasc.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/test_submission_of_predict_ensemble_fasc.ipynb)||
 
 # 評価指標
 
