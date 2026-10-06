@@ -20,6 +20,7 @@
 |fascセグメンテーション(UNet)|[fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/fasc_model.ipynb)||
 |fascセグメンテーション(DeepLabV3+)|[DeepLabV3+_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/DeepLabV3+_fasc_model.ipynb)||
 |fascセグメンテーション(FPN)|[FPN_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/FPN_fasc_model.ipynb)||
+|fascセグメンテーション(UnetPlusPlus)|[UnetPlusPlus_fasc_model.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UnetPlusPlus_fasc_model.ipynb)||
 |fascアンサンブル検証(UNet + DeepLabV3+)|[UNet_DeepLab_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_DeepLab_fasc_ensemble.ipynb)||
 |fascアンサンブル検証(UNet + FPN)|[UNet_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_FPN_fasc_ensemble.ipynb)||
 |fascアンサンブル検証(UNet + DeepLabV3+ + FPN)|[UNet_Deep_FPN_fasc_ensemble.ipynb](https://github.com/kenkenkengo0421/Muscle_Architecture_in_Ultrasound_Data/blob/main/UNet_Deep_FPN_fasc_ensemble.ipynb)||
