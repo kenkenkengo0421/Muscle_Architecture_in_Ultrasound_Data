@@ -268,34 +268,66 @@ Muscle_Architecture_in_Ultrasound_Data$ tree
 ├── Source
 │   ├── f_1.py
 │   └── f_2.py
-├── UNet_DeepLab_fasc_ensemble.ipynb
-├── UNet_Deep_FPN_fasc_ensemble.ipynb
-├── UNet_FPN_fasc_ensemble.ipynb
+├── UnetPlusPlus_fasc_model.ipynb
 ├── apo_model.ipynb
 ├── best_model_nb_FPN
 │   └── fasc
+│       └── 0.285796
+│           └── FPN_fasc_model.ipynb
 ├── best_model_nb_UNet
 │   ├── apo
+│   │   ├── 0.791261
+│   │   │   └── apo_model.ipynb
+│   │   └── 0.804296
+│   │       └── apo_model.ipynb
 │   └── fasc
+│       ├── 0.277138 
+│       │   └── fasc_model.ipynb
+│       ├── 0.279311
+│       │   └── fasc_model.ipynb
+│       ├── 0.284072
+│       │   └── fasc_model.ipynb
+│       ├── 0.294866
+│       │   └── fasc_model.ipynb
+│       ├── 0.296083
+│       │   └── fasc_model.ipynb
+│       └── 0.298020
+│           └── fasc_model.ipynb
+├── best_model_nb_UnetPlusPlus
+│   └── fasc
+│       └── 0.313085
+│           └── UnetPlusPlus_fasc_model.ipynb
 ├── best_model_nb_deepLabV3+
 │   └── fasc
-├── best_submission_of_predict_ensemble_fasc.ipynb     #kaggleベストスコア
+│       ├── 0.288047
+│       │   └── DeepLabV3+_fasc_model.ipynb
+│       └── 0.288293
+│           ├── DeepLabV3+_fasc_model.ipynb
+│           └── submission_of_predict_deepfasc.ipynb
+├── best_submission_of_predict_ensemble_fasc.ipynb
 ├── content                                            #(コードにより自動生成)
 │   └── my_dataset
 |                └──                                   #(公式の画像image, mask, testデータ)
+├── ensemble
+│   ├── U-Net_U-Netpp_fasc_ensemble.ipynb
+│   ├── UNet_DeepLab_fasc_ensemble.ipynb
+│   ├── UNet_Deep_FPN_fasc_ensemble.ipynb
+│   └── UNet_FPN_fasc_ensemble.ipynb
 ├── fasc_model.ipynb
 ├── img
 │   └── img.png
 ├── requirements.txt
 ├── segmentation_baseline_models
-│   ├── DeepLabV3_fasc_model.pth   #(コードにより自動生成)
-│   ├── FPN_fasc_model.pth         #(コードにより自動生成)
-│   ├── apo_model.pth              #(コードにより自動生成)
-│   └── fasc_model.pth             #(コードにより自動生成)
+│   ├── DeepLabV3_fasc_model.pth            #(コードにより自動生成)
+│   ├── FPN_fasc_model.pth                  #(コードにより自動生成)
+│   ├── UnetPlusPlus_fasc_model.pth         #(コードにより自動生成)
+│   ├── apo_model.pth                       #(コードにより自動生成)
+│   └── fasc_model.pth                      #(コードにより自動生成)
 ├── study.ipynb
-├── submission.csv                 #(コードにより自動生成)
+├── submission.csv
 ├── test_submission_of_predict_ensemble_fasc.ipynb
-└── umud-challenge-muscle-architecture-in-ultrasound-data.zip  #(公式よりDL)
+└── umud-challenge-muscle-architecture-in-ultrasound-data.zip #公式よりDL
+
 
 
 
