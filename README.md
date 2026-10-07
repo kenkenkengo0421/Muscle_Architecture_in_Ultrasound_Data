@@ -214,6 +214,19 @@ w \, y \log(p)
 
 </details>
 
+
+## fasc検証(UnetPlusPlus)
+
+<details><summary></summary>
+
+| lr | pos_weight | epoch数 | Best Dice | Best epoch | Best threshold | Val Loss |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0.0004 | 10 | 40 | 0.31309 | 13 | 0.68 | 0.80446 |
+| 0.0006 | 10 | 40 | 0.31082 | 13 | 0.76 | 0.80324 |
+
+</details>
+
+
 # 環境
 
 * `Linux`- `Ubuntu`
